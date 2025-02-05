@@ -1,0 +1,134 @@
+%\documentclass[prd,preprintnumbers,floatfix,letterpaper,showpacs,showkeys,superscriptaddress,nofootinbib,12pt]{revtex4-2}
+\documentclass[12pt]{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[margin=1truein]{geometry}
+ \usepackage{setspace}
+\usepackage[nottoc,numbib]{tocbibind}
+\newcommand{\etal}{{\it et al.}}
+\newcommand{\task}{\textcolor{red}
+{\textbf{Task: }}}
+\newcommand{\note}[1]{\textsf{\textcolor{red}{#1}}}
+\newcommand{\Tr}{\text{Tr}}
+\newcommand{\diag}{\text{diag}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{physics}
+\usepackage{algpseudocode}
+\usepackage{rotating}
+\usepackage{dsfont}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{dsfont}
+\usepackage{comment}
+\usepackage[braket]{qcircuit}
+\usepackage{environ}
+\usepackage[caption=false]{subfig}
+\usepackage{mathtools}
+\usepackage{makecell}
+\usepackage{tabu}
+\usepackage{tikz}
+%%%%%%%%%%%%%%%%%%%%%%%%% Undergraduate thesis format based on RevTeX
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\thispagestyle{empty} 
+   \begin{center}
+       \vspace*{1cm}
+
+       \textbf{Title\rm}
+
+       \vspace{0.5cm}
+        Subtitle
+            
+       \vspace{1.5cm}
+
+       \textbf{Camden Warme}
+
+       \vfill
+            
+       A thesis presented for the degree of\\
+       Bachelor of Science
+            
+       \vspace{0.8cm}
+     
+       \includegraphics[width=0.2\textwidth]{OSU Logo.pdf}
+            
+       Department of Mathematics\\
+       College of Science\\
+       Oregon State University\\
+        \today
+            
+   \end{center}
+-\end{titlepage}
+ \doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Abstract and Table of Contents %%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\begin{abstract}
+This is what I did.  I wrote it up in 12 pt font and double-spaced so that one can write comments on the draft. I did narrow the margins to get some of the paper back.  
+\end{abstract}
+
+\newpage
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% main text %%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{1}
+\chapter{Introductory Material} \label{sec:intro}  % so I can refer to it later
+\pagenumbering{arabic}
+\section{Introduction}
+
+
+\section{Background}
+
+
+\chapter{Methodology} \label{sec:Methods}
+
+\section{Something}
+\chapter{Results and Discussion} \label{sec:results}
+
+
+
+\newpage
+
+\chapter{Conclusions} \label{sec:conclusions}
+
+\newpage
+
+\chapter{Acknowledgments} \label{sec:acknow}
+
+
+
+%\newpage
+\renewcommand{\bibname}{References}  % change the name from Bibliography to References
+\bibliographystyle{ieeetr}
+% the provided ieeetr style puts paper titles in quotes which is nice. 
+% the style can be changed to utphys or apsrev4-2 if needed
+\bibliography{bibliography}
+
+\newpage
+
+\appendix
+%\chapter{Appendix} \label{sec:appendixI}
+
+\end{document}
