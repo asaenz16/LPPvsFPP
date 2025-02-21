@@ -1,7 +1,7 @@
 clear;
 n = 100;
 p = 0.5;
-t = 500000;
+t = 5000;
 F_value = 30;
 L_value = 180;
 data = sparse(2*n, 2*n); % Preallocate as sparse
